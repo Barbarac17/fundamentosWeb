@@ -1,0 +1,55 @@
+/* index */
+.center{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  
+  justify-content: center;
+}
+.cor{
+  background-color: #bdb2ff
+}
+
+.espacoP{
+  padding: 40px;
+
+}
+ #menu li{
+   display: inline;
+   padding: 20px;
+ }
+
+ #menu li a{
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+ }
+
+ #menu li a:hover{
+   color: aquamarine;
+ }
+
+/* contato */
+
+.img1 {
+  border-radius: 50%;
+  padding: 30px;
+ }
+
+ .container-contato{
+  display: flex;
+  justify-content: center;
+  
+ }
+
+ .formul{
+  text-align: left;
+  padding: 20px;
+ }
+
+ .gif1{
+  text-align: right;
+  padding: 20px;
+ }
