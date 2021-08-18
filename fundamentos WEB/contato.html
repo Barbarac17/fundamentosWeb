@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contatin</title>
   <link rel="stylesheet" href="assest/css/style.css">
+  <script src="https://kit.fontawesome.com/d5fee206f5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,25 +15,28 @@
     <li>
       <a href="index.html"> Home </a>
     </li>
-      </ul>
-  <h1 class = "center">Manda sua pergunta</h1><br><br>
-  <div class = "container-contato">
-    <div class = "formul espacoP">
+  </ul>
+  <h1 class="center">Manda sua pergunta</h1><br><br>
+  <div class="container-contato">
+    <div class="formul espacoP">
       <form>
         <label for="Nome"> Nome:</label><br>
-        <input type="text" id="nome">
-        <br>
-    
+        <input type="text" id="nome" onkeyup='validaNome()'>
+        <div id="txtNome"></div>
+
         <label for="email"> E-mail:</label><br>
-        <input type="email" id="email">
-        <br>
-    
+        <input type="email" id="email" onkeyup='validaEmail()'>
+        <div id="txtEmail"></div>
+
         <label for="assunto"> Assunto:</label><br>
-        <input type="text" id="assunto">
+        <textarea name="" id="" cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
+        <div id="txtAssunto"></div>
+        <br>
+        <button onclick="enviar()"> Enviar </button>
       </form>
     </div>
 
-    <div class = "gif1">
+    <div class="gif1">
       <img src="./assest/gif/byebye.webp" alt="Minha foto" style="width: 300px;height: 220px;">
     </div>
 
@@ -40,12 +44,26 @@
 
   <footer>
 
-    
+    <div class="container">
+      <a href="http://www.linkedin.com/in/barbara-cirilo" target="_blank">
+        <img class="redesocial" src="./assest/img/linkdin.jpg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/Barbarac17" target="_blank">
+        <img class="redesocial" src="./assest/img/git.jpg" alt="">
+      </a>
+      <a href="https://www.instagram.com/barbaracirilo/" target="_blank">
+        <img class="redesocial" src="./assest/img/insta.jpg" alt="Instagram">
+      </a>
+    </div>
+
+    <p class="center">
+      Todos os direitos reservados: Bárbara Cirilo &copy
+    </p>
   </footer>
 
 
- 
-  
+  <script src="./assest/js/script.js"></script>
+
 </body>
 
 </html>
