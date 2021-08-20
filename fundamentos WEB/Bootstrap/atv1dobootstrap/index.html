@@ -8,12 +8,24 @@
   <title>bootstrap1atividade</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    .redesocial {
+      width: 30px;
+      height: 30px;
 
+    }
+
+    .imgcardstm {
+      width: 350px;
+      height: 300px;
+      ;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Barra navegação (navbar) -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
       aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -26,22 +38,26 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#texto1">Materia</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Ação</a>
-            <a class="dropdown-item" href="#">Outra ação</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Algo mais aqui</a>
-          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Desativado</a>
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+        <!-- <li class="nav-item dropdown"> -->
+        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" -->
+        <!-- aria-haspopup="true" aria-expanded="false"> -->
+        <!-- Dropdown -->
+        <!-- </a> -->
+        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
+        <!-- <a class="dropdown-item" href="#">Texto1</a> -->
+        <!-- <a class="dropdown-item" href="#">Outra ação</a> -->
+        <!-- <div class="dropdown-divider"></div> -->
+        <!-- <a class="dropdown-item" href="#">Algo mais aqui</a> -->
+        <!-- </div> -->
+        <!-- </li> -->
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#card">Cards</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -93,10 +109,11 @@
 
   <!-- colunas de cards -->
   <div class="container">
-
+    <h2 id="card" class="text-center mb-5">Cards</h2>
     <div class="card-columns">
+
       <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <img class="imgcardstm" class="card-img-top" src="./img/carronuvem.jpg" alt="Imagem de capa do card">
         <div class="card-body">
           <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
           <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a
@@ -114,10 +131,12 @@
         </blockquote>
       </div>
       <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <img class="imgcardstm" class="card-img-top" src="./img/malvado ursinhos carinhoso2.jpg"
+          alt="Imagem de capa do card">
         <div class="card-body">
           <h5 class="card-title">Título do card</h5>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
+            conteúdo
             adicional.</p>
           <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
         </div>
@@ -135,13 +154,14 @@
       <div class="card text-center">
         <div class="card-body">
           <h5 class="card-title">Título do card</h5>
-          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
+            conteúdo
             adicional.</p>
           <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
         </div>
       </div>
       <div class="card">
-        <img class="card-img" src=".../100px260/" alt="Imagem do card">
+        <img class="imgcardstm" class="card-img" src="./img/ursoamarelo.jpg" alt="Imagem do card">
       </div>
       <div class="card p-3 text-right">
         <blockquote class="blockquote mb-0">
@@ -157,70 +177,168 @@
         <div class="card-body">
           <h5 class="card-title">Título do card</h5>
           <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
-            conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.
+            conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em
+            ação.
           </p>
           <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
         </div>
       </div>
     </div>
-  
-  
-  <!-- colunas de cards -->
 
-  <!-- texto e video -->
-  <div class="row mt-5 mb-5">
-    <div class="col-md-6">
-      <h3>texto de teste</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, debitis rerum laboriosam a aperiam placeat totam
-        incidunt suscipit beatae dolor mollitia nesciunt tempore iure voluptatem? Eos eum omnis quidem voluptatem.
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam dolor quod harum voluptatem natus temporibus
-        earum asperiores molestias ducimus, rem ipsum ea non voluptatibus dolore voluptate distinctio exercitationem
-        tenetur reprehenderit!
 
-      </p>
+    <!-- colunas de cards -->
+
+    <!-- texto e video -->
+    <div class="row mt-5 mb-5">
+      <div class="col-md-6">
+        <h3 id="texto1">texto de teste</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, debitis rerum laboriosam a aperiam placeat
+          totam
+          incidunt suscipit beatae dolor mollitia nesciunt tempore iure voluptatem? Eos eum omnis quidem voluptatem.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam dolor quod harum voluptatem natus
+          temporibus
+          earum asperiores molestias ducimus, rem ipsum ea non voluptatibus dolore voluptate distinctio exercitationem
+          tenetur reprehenderit!
+
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rgd5vxlCFjk" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+
     </div>
 
-    <div class="col-md-6">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Rgd5vxlCFjk" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+    <!--texto e video  -->
+
+    <!-- formulario -->
+    <div class="row">
+      <div class="col md 12">
+
+        <h4 id="contato" class="text-center">
+          Entre em contato
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col md 6">
+        <form>
+          <div class="form-group">
+            <label for="email">Seu email</label>
+            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup='validaEmail()'>
+          </div>
+          <div id="txtEmail"></div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Assunto</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Dúvidas</option>
+              <option>Reclamações</option>
+              <option>Elogios</option>
+              <option>Trabalhe conosco</option>
+              <option>Outros</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Sua mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3" onkeyup="validaMensagem()"></textarea>
+            <div id="txtMensagem"></div>
+          </div>
+          
+          <button onclick="enviar()" type="button" class="btn btn-success">Enviar</button>
+        </form>
+
+      </div>
+      <div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.146062781501!2d-46.740844949355704!3d-23.45519528466074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefbf1fd9b75d5%3A0x3688d0d476592d10!2zSmFyYWd1w6E!5e0!3m2!1spt-PT!2sbr!4v1629482230887!5m2!1spt-PT!2sbr"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+  <!-- formulario -->
+
+  <!-- rodapé -->
+  <hr>
+  <footer>
+    <div class="row mb-3">
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="container d-flex justify-content-center">
+          <a href="http://www.linkedin.com/in/barbara-cirilo" target="_blank" class="p-3">
+            <img class="redesocial" src="../../blog_atv1/assest/img/linkdin.jpg" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Barbarac17" target="_blank" class="p-3">
+            <img class="redesocial" src="../../blog_atv1/assest/img/git.jpg" alt="Github">
+          </a>
+          <a href="https://www.instagram.com/barbaracirilo/" target="_blank" class="p-3">
+            <img class="redesocial" src="../../blog_atv1/assest/img/insta.jpg" alt="Instagram">
+          </a>
+        </div>
+      </div>
     </div>
 
-  </div>
-  <!--texto e video  -->
-</div>
-<!-- rodapé -->
-<hr>
-<footer>
-<div class="row mb-3">
-<div class="col-md-12 d-flex justify-content-center">
-  <div class="container">
-    <a href="http://www.linkedin.com/in/barbara-cirilo" target="_blank" class="p-3">
-        <img class="redesocial" src="/blog_atv1/assest/img/linkdin.jpg" alt="LinkedIn" >
-    </a>
-    <a href="https://github.com/Barbarac17" target="_blank" class="p-3" >
-        <img class="redesocial" src="../img/linkdin.jpg" alt="Github"  >
-    </a>
-    <a href="https://www.instagram.com/barbaracirilo/" target="_blank" class="p-3">
-        <img class="redesocial" src="/blog_atv1/assest/img/insta.jpg" alt="Instagram" >
-    </a>
-</div>
-</div>
-</div>
-  
-<div class="row">
-  <div class="col md 12">
-    <p class="text-center">
-      Todos os direitos reservados: Bárbara Cirilo &copy
-      </p>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">
+          Todos os direitos reservados: Bárbara Cirilo &copy
+        </p>
 
-  </div>
-</div>
+      </div>
+    </div>
 
 
-</footer>
-<!-- rodapé -->
+  </footer>
+  <!-- rodapé -->
+
+
+
+  <script>
+    
+    let email = document.querySelector('#email')
+    let mensagem = document.querySelector('#mensagem')
+    let emailOk = false
+    let mensagemOk = false
+
+    function validaEmail() {
+      let txtEmail = document.querySelector('#txtEmail')
+
+      if (email.value.indexOf('@') == -1) {
+        txtEmail.innerHTML = 'E-mail inválido'
+        txtEmail.style.color = 'red'
+      } else {
+        txtEmail.innerHTML = 'E-mail válido'
+        txtEmail.style.color = 'green'
+        let emailOk = true
+      }
+    }
+
+    function validaMensagem() {
+      let txtMensagem = document.querySelector('#txtMensagem')
+
+      if (mensagem.value.length >= 100) {
+        txtMensagem.innerHTML = 'Texto é muito grande, digite no máximo 100 caracteres'
+        txtMensagem.style.color = 'red'
+      } else {
+        txtMensagem.style.display = 'none'
+        let mensagemOk = true
+      }
+    }
+
+    function enviar() {
+      if (emailOk == true && mensagemOk == true) {
+        alert('Enviado com sucesso')
+      } else {
+        alert(' preencha o formlario corretamente antes de enviar ...')
+      }
+    }
+
+
+  </script>
 
   <!-- links do bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -232,7 +350,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>
